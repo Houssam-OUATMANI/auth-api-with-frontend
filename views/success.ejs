@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="header">
+        <nav class="nav">
+          <ul class="ul">
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+            <h1> <%= message %></h1>
+          </main>
+          <div>
+            <% if ( message === 'Succesfully registered') { %>
+              <h2 ><a style="color: black; text-align: center; display: block;" href="/login">Login ?</a></h2>
+             
+            <% } %>
+      
+      </div>
+
+      <footer class="footer">
+        <p title="yes it is">Is it a beautiful footer ?</p>
+      </footer>
+
+  </body>
+</html>

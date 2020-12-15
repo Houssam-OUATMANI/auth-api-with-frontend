@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
+}
+
+ul {
+    list-style: none;
+}
+.nav {
+    display: flex;
+}
+.ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Shrikhand;
+    font-size: 1.5rem;
+
+}
+.header {
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    background-color:rgb(39, 34, 32);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.main{
+    display: flex;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+label {
+    display: block;
+    font-family: Shrikhand;
+}
+input {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin:  1rem 0;
+    border:  none;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 8px rgba(77, 72, 72, 0.356);
+    font-family: Shrikhand;  
+}
+
+
+.btn {
+   background-color:rgb(39, 34, 32);
+   color: white;
+   font-size: large;
+   cursor: pointer;
+}
+
+.footer {
+    height: 250px;
+    background-color:rgb(39, 34, 32);
+    color: white;
+   font-size: large;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+   font-family: Shrikhand;  
+   font-size: 2.5rem;
+   cursor: pointer;
+
+}
