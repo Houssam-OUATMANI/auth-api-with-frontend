@@ -1,3 +1,4 @@
+const fs = require('fs')
 const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
@@ -6,9 +7,11 @@ const {registerValidation, loginValidation} = require('../validation/validation'
 
 // simple Get Routes
 router.get('/register', (req, res)=>{
+    fs.appendFile('./log/client-data-register.txt' , JSON.stringify(req.headers), (err => err && console.log(err)))
     res.render('register')
 })
 router.get('/login', (req, res)=>{
+    fs.appendFile('./log/client-data-login.txt' , JSON.stringify(req.headers), (err => err && console.log(err)))
     res.render('login')
 })
 
